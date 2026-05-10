@@ -69,22 +69,22 @@ This project focuses on fintech transaction data analysis and includes:
             
 ## 02_spreadsheet/( file given above)
 
- ├── spreadsheet_workbook.xlsx
- └── spreadsheet_answers.md
+     ├── spreadsheet_workbook.xlsx
+     └── spreadsheet_answers.md
 
  
 ## 03_sql/(file given above)
-   ├── analysis_queries.sql
-   └── sql_answers.md
+     ├── analysis_queries.sql
+     └── sql_answers.md
 
    
 ## 04_python/(file given above)
-   ├── fintech_pipeline.ipynb
-   └── summary_metrics.json
+     ├── fintech_pipeline.ipynb
+     └── summary_metrics.json
 
    
 ## 05_visualization/( file given above)
-   └── dashboard_link.txt
+     └── dashboard_link.txt
 
 
 
