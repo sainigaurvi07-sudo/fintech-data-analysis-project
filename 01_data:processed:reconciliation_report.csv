@@ -1,0 +1,6 @@
+transaction_id,discrepancy_type,ledger_value,gateway_value
+T004,Missing in Gateway,"amount=300.0, status=completed, date=2023-01-04",N/A
+T007,Missing in Ledger,N/A,"amount=400.0, status=completed, date=2023-01-07"
+T003,Amount Mismatch,150.0,155.0
+T002,Status Mismatch,pending,completed
+T006,Status Mismatch,completed,pending

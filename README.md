@@ -2,15 +2,15 @@
 
 ## Student Information
 
-- **Student Name:** Gaurvi Saini  
-- **Student ID:** bitsom_ftai_2601005  
+- **Student Name:** Gaurvi Saini
+- **Student ID:** bitsom_ftai_2601005
 
 ---
 
 ## Public GitHub Repository
 
 GitHub Repository Link:  
-[fintech-data-analysis-project](https://github.com/sainigaurvi07-sudo/fintech-data-analysis-project?utm_source=chatgpt.com)
+[fintech-data-analysis-project](https://github.com/sainigaurvi07-sudo/fintech-data-analysis-project)
 
 ---
 

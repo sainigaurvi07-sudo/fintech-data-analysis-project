@@ -1,0 +1,109 @@
+{
+  "reconciliation_report": {
+    "summary_metrics": {
+      "total_ledger_records": 6,
+      "total_gateway_records": 6,
+      "duplicate_transaction_ids_ledger": 0,
+      "duplicate_transaction_ids_gateway": 0,
+      "records_missing_in_gateway": 1,
+      "records_missing_in_ledger": 1,
+      "amount_mismatches": 1,
+      "status_mismatches": 2,
+      "total_discrepancies_found": 5
+    },
+    "ledger_data": [
+      {"transaction_id": "T001", "amount": 100.0, "status": "completed", "date": "2023-01-01"},
+      {"transaction_id": "T002", "amount": 200.0, "status": "pending",   "date": "2023-01-02"},
+      {"transaction_id": "T003", "amount": 150.0, "status": "completed", "date": "2023-01-03"},
+      {"transaction_id": "T004", "amount": 300.0, "status": "completed", "date": "2023-01-04"},
+      {"transaction_id": "T005", "amount":  50.0, "status": "failed",    "date": "2023-01-05"}
+    ],
+    "gateway_data": [
+      {"transaction_id": "T001", "amount": 100.0, "status": "completed", "date": "2023-01-01"},
+      {"transaction_id": "T002", "amount": 200.0, "status": "completed", "date": "2023-01-02"},
+      {"transaction_id": "T003", "amount": 155.0, "status": "completed", "date": "2023-01-03"},
+      {"transaction_id": "T005", "amount":  50.0, "status": "failed",    "date": "2023-01-05"},
+      {"transaction_id": "T007", "amount": 400.0, "status": "completed", "date": "2023-01-07"}
+    ],
+    "data_quality": {
+      "ledger": {
+        "duplicate_transaction_ids": 0,
+        "null_values": {}
+      },
+      "gateway": {
+        "duplicate_transaction_ids": 0,
+        "null_values": {}
+      }
+    },
+    "discrepancies": {
+      "missing_in_gateway": [
+        {
+          "transaction_id": "T004",
+          "amount": 300.0,
+          "status": "completed",
+          "date": "2023-01-04"
+        }
+      ],
+      "missing_in_ledger": [
+        {
+          "transaction_id": "T007",
+          "amount": 400.0,
+          "status": "completed",
+          "date": "2023-01-07"
+        }
+      ],
+      "amount_mismatches": [
+        {
+          "transaction_id": "T003",
+          "amount_ledger": 150.0,
+          "amount_gateway": 155.0,
+          "difference": 5.0
+        }
+      ],
+      "status_mismatches": [
+        {
+          "transaction_id": "T002",
+          "status_ledger": "pending",
+          "status_gateway": "completed"
+        },
+        {
+          "transaction_id": "T006",
+          "status_ledger": "completed",
+          "status_gateway": "pending"
+        }
+      ]
+    },
+    "final_reconciliation": [
+      {
+        "transaction_id": "T004",
+        "discrepancy_type": "Missing in Gateway",
+        "ledger_value": {"amount": 300.0, "status": "completed", "date": "2023-01-04"},
+        "gateway_value": null
+      },
+      {
+        "transaction_id": "T007",
+        "discrepancy_type": "Missing in Ledger",
+        "ledger_value": null,
+        "gateway_value": {"amount": 400.0, "status": "completed", "date": "2023-01-07"}
+      },
+      {
+        "transaction_id": "T003",
+        "discrepancy_type": "Amount Mismatch",
+        "ledger_value": 150.0,
+        "gateway_value": 155.0
+      },
+      {
+        "transaction_id": "T002",
+        "discrepancy_type": "Status Mismatch",
+        "ledger_value": "pending",
+        "gateway_value": "completed"
+      },
+      {
+        "transaction_id": "T006",
+        "discrepancy_type": "Status Mismatch",
+        "ledger_value": "completed",
+        "gateway_value": "pending"
+      }
+    ]
+  }
+}

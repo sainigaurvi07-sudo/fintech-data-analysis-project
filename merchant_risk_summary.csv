@@ -1,0 +1,6 @@
+merchant_id,merchant_name,merchant_category,account_manager,total_transactions,total_amount_usd,avg_amount_usd,avg_risk_score,max_risk_score,high_risk_count,high_value_count,chargeback_count,captured_count,failed_count,chargeback_rate,high_risk_rate
+M001,Alpha Mart,Grocery,Aisha Khan,11,40812.0,3710.18,61.2,83.0,2,2,1,8,2,9.1,18.2
+M002,Beta Stores,Electronics,Rohan Mehta,11,41782.0,3798.36,69.4,86.0,5,3,1,7,3,9.1,45.5
+M003,City Pharma,Healthcare,Elena Rossi,2,8640.0,4320.0,40.0,42.0,0,0,0,2,0,0.0,0.0
+M004,Delta Travels,Travel,Marcus Lee,4,14600.0,3650.0,48.8,58.0,1,1,1,2,1,25.0,25.0
+M005,Eco Home,Home,Nina Weber,2,10246.0,5123.0,54.5,65.0,1,1,1,0,1,50.0,50.0
