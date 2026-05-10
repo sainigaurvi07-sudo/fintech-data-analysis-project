@@ -1,4 +1,3 @@
-<repo-root>/
 # Fintech Data Analysis Project
 
 ## Student Information
@@ -44,6 +43,7 @@ This project focuses on fintech transaction data analysis and includes:
 ## 01_data/( file given above)
 
    ##raw/
+   
          ## transactions_raw.csv 
             ├── merchant_master.csv
             ├── users.csv
@@ -51,7 +51,9 @@ This project focuses on fintech transaction data analysis and includes:
             ├──# gateway.csv
             ├── exchange_rates.csv
             └── api_response_sample.json
+            
    ##processed/
+   
             ├── cleaned_transactions.csv
             ├── merchant_risk_summary.csv
             ├── missing_in_gateway.csv
